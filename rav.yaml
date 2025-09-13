@@ -11,4 +11,13 @@ scripts:
   build-run:
     - rav run build
     - rav run run 
-  push: docker push 
+  configure:
+    - gcloud auth configure-docker us-central1-docker.pkg.dev
+    - gcloud artifacts repositories create serverless-py-repo --repository-format=docker --location=us-central1
+  push: 
+    - docker build --platform=linux/amd64 -f Dockerfile -t serverless-py-amd64 .
+    - docker tag serverless-py-amd64 us-central1-docker.pkg.dev/ai-practice-471423/serverless-py-repo/serverless-py:latest
+    - docker tag serverless-py-amd64 us-central1-docker.pkg.dev/ai-practice-471423/serverless-py-repo/serverless-py:v1
+    - docker push us-central1-docker.pkg.dev/ai-practice-471423/serverless-py-repo/serverless-py --all-tags
+  deploy:
+    - gcloud run deploy serverless-py-run --image=us-central1-docker.pkg.dev/ai-practice-471423/serverless-py-repo/serverless-py:latest --allow-unauthenticated --region=us-central1 --project=ai-practice-471423

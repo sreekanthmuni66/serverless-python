@@ -185,5 +185,73 @@ git add .
 git commit -m "commit"
 git push -u origin main
   
-  
+   9 docker ps
+  10 docker ps -a
+  11 docker system prune
+  12 docker images
+  13 docker ps -a
+  14 docker rmi 6d 1b 7f
+  15 docker images -a
+  16 docker ps -a
+  17 docker build -f Dockerfile -t serverless-py .
+  18 docker build -f Dockerfile -t serverless-py .
+  19 docker run -p 8000:8000 -it serverless-py
+  20 rav run run
+  21 history
+  22 venv\Scripts\activate
+  23 rav run run
+  24 docker ps -a
+  25 docker images -a
+  26 docker system prune
+  27 docker ps
+  28 docker ps -a
+  29 docker iamges
+  30 docker images
+  31 docker images -a
+  32 docker rmi cc fe e8 3a ed 7b 7f
+  33 docker images
+  34 docker images -a
+  35 docker ps
+  36 docker ps -a
+  37 history
+  38 rav run run
+  39 docker images
+  40 docker images -a
+  41 docker ps
+  42 docker ps -a
+  43 rav run build-run
+  44 git status
+  45 git add .
+  46 git commit -m "commit"
+  47 git push origin main
+  48 git branch -M main
+  49 git remote add origin https://github.com/sreekanthmuni66/serverless-python.git
+  50 git push -u origin main
+  51 git add .
+  52 git commit -m "commit"
+  53 git push -u origin main
+  54 history
+  55 git status
+  56 git add .
+  57 git commit -m "commit"
+  58 git push origin main
+  59 docker ps
+  60 gcloud auth configure-docker us-central1-docker.pkg.dev
+  61 gcloud auth login
+  62 gcloud config set project ai-practice-471423
+  63 gcloud auth application-default set-quota-project ai-practice-471423
+  64 gcloud config set project ai-practice-471423
+  65 gcloud artifacts
+  66 rav run configure
+  67 docker build --platform=linux/amd64 -f Dockerfile -t serverless-py-amd64 .
+  68 docker tag serverless-py-amd64 us-central1-docker.pkg.dev/ai-practice-471423/serverless-py-repo/serverless-py... 
+  69 docker tag serverless-py-amd64 us-central1-docker.pkg.dev/ai-practice-471423/serverless-py-repo/serverless-py:v1 
+  70 docker push us-central1-docker.pkg.dev/ai-practice-471423/serverless-py-repo/serverless-py --all-tags
+  72 gcloud artifacts repositories create serverless-py-repo --repository-format=docker --location=us-central1        
+  73 docker push us-central1-docker.pkg.dev/ai-practice-471423/serverless-py-repo/serverless-py --all-tags
+  74 rav run deploy
+  75 docker images
+  76 rav run deploy
+  77 rav run deploy
+  78 git status  
   
