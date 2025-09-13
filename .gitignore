@@ -1,6 +1,7 @@
 .git/
 .env*
 README.md
+commands.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
