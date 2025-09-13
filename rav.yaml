@@ -6,6 +6,7 @@ scripts:
   empty-build: docker build -f Dockerfile.empty -t empty-py .
   empty-shell: docker exec -it empty-py /bin/bash
   empty-run: docker run -p 8000:8000 --rm --name empty-py -it empty-py 
+  run-env-inline: docker run -e MODE=stage -p 8000:8000 --rm --name serverless-py -it serverless-py 
   run: docker run -p 8000:8000 --rm --name serverless-py -it serverless-py 
   build-run:
     - rav run build
